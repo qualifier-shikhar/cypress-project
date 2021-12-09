@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-09T05:10:26.972Z",
+    "end": "2021-12-09T05:10:30.374Z",
+    "duration": 3402,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fcf8bfea-3bb9-4727-b678-80cfa3787423",
+      "title": "",
+      "fullFile": "cypress/integration/my-own-tests/expedia.spec.js",
+      "file": "cypress/integration/my-own-tests/expedia.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "afe1d273-5f00-474a-afd8-235a645219e7",
+          "title": "Basic Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Correct Title",
+              "fullTitle": "Basic Test Correct Title",
+              "timedOut": null,
+              "duration": 3328,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginToApplication();\ncy.title().should('eq', 'Conduit'); // cy.logoutToApplication()",
+              "err": {},
+              "uuid": "69c4acd5-cfca-4550-b095-8dfa5d75d430",
+              "parentUUID": "afe1d273-5f00-474a-afd8-235a645219e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69c4acd5-cfca-4550-b095-8dfa5d75d430"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3328,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

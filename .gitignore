@@ -42,3 +42,7 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Reports
+angular-realworld-example-app\mochawesome-report
+angular-realworld-example-app\cypress\results

@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:4200",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    },
+    "env": {
+        "username": "artem.bondar16@gmail.com",
+        "password": "CypressTest1"
+    }
+}
