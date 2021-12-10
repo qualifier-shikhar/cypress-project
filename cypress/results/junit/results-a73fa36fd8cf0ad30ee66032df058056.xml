@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.2050" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-12-10T11:12:41" tests="0" file="cypress/integration/my-own-tests/03-verifyingPostDeletion.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Post Deletion" timestamp="2021-12-10T11:12:41" tests="1" time="11.1810" failures="0">
+    <testcase name="Post Deletion verify deletion of post" time="11.1210" classname="verify deletion of post">
+    </testcase>
+  </testsuite>
+</testsuites>
