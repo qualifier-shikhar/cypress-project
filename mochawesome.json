@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 3,
+    "suites": 2,
     "tests": 4,
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-10T11:12:09.095Z",
-    "end": "2021-12-10T11:12:52.331Z",
-    "duration": 25937,
+    "start": "2021-12-13T13:26:01.623Z",
+    "end": "2021-12-13T13:26:41.503Z",
+    "duration": 25561,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "e87ea632-4060-4764-9f0e-f71a699223af",
+      "uuid": "651936c9-1b72-4220-b756-0c8f8a4cca42",
       "title": "",
-      "fullFile": "cypress/integration/my-own-tests/02-verifyingPostCreation.spec.js",
-      "file": "cypress/integration/my-own-tests/02-verifyingPostCreation.spec.js",
+      "fullFile": "cypress/integration/my-own-tests/02-verifyingPosting.spec.js",
+      "file": "cypress/integration/my-own-tests/02-verifyingPosting.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "dfc2a61e-994a-4d3e-8d17-e3c33cd4a0d5",
-          "title": "Post Creation",
+          "uuid": "b35a56dd-0bd6-4451-b56c-f648d197adbf",
+          "title": "Post Creation & Deletion",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,67 +36,27 @@
           "tests": [
             {
               "title": "verify creation of post",
-              "fullTitle": "Post Creation verify creation of post",
+              "fullTitle": "Post Creation & Deletion verify creation of post",
               "timedOut": null,
-              "duration": 9383,
+              "duration": 10119,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.signinToApplication();\ncy.contains('New Article').click();\ncy.get('[ng-reflect-name=\"title\"]').type('Jenkins Integration');\ncy.get('[ng-reflect-name=\"description\"]').type('Integrate to Jenkins');\ncy.get('[ng-reflect-name=\"body\"]').type('This is just a title');\ncy.get('input[type=\"text\"][placeholder=\"Enter tags\"]').type('jenkins{enter}');\ncy.get('input[type=\"text\"][placeholder=\"Enter tags\"]').type('ci/cd{enter}');\ncy.get('input[type=\"text\"][placeholder=\"Enter tags\"]').type('pipelines{enter}');\ncy.contains('Publish Article').click();\ncy.get('button[class=\"btn btn-sm btn-outline-danger\"]').should('exist');",
               "err": {},
-              "uuid": "6cf9bea3-d451-46a9-acbe-aa71c2e10938",
-              "parentUUID": "dfc2a61e-994a-4d3e-8d17-e3c33cd4a0d5",
+              "uuid": "54d0272a-687a-4898-ad6f-aed81693a7c0",
+              "parentUUID": "b35a56dd-0bd6-4451-b56c-f648d197adbf",
               "isHook": false,
               "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "6cf9bea3-d451-46a9-acbe-aa71c2e10938"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 9383,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "319c9d17-ada4-4ebb-9cc4-ac6c13b4f6a1",
-      "title": "",
-      "fullFile": "cypress/integration/my-own-tests/03-verifyingPostDeletion.spec.js",
-      "file": "cypress/integration/my-own-tests/03-verifyingPostDeletion.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "d9e966d8-ad5c-405f-8ca3-f62cf4c084b6",
-          "title": "Post Deletion",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
+            },
             {
               "title": "verify deletion of post",
-              "fullTitle": "Post Deletion verify deletion of post",
+              "fullTitle": "Post Creation & Deletion verify deletion of post",
               "timedOut": null,
-              "duration": 11121,
+              "duration": 10054,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +65,21 @@
               "context": null,
               "code": "cy.signinToApplication();\ncy.contains('Global Feed').click();\ncy.contains('Jenkins Integration').click();\ncy.get('button[class=\"btn btn-sm btn-outline-danger\"]').first().click();\ncy.contains('Your Feed').should('exist');\ncy.logoutToApplication();",
               "err": {},
-              "uuid": "f206af78-5b21-4719-b6d4-1df33d3d1749",
-              "parentUUID": "d9e966d8-ad5c-405f-8ca3-f62cf4c084b6",
+              "uuid": "82f80547-e15d-449c-84bf-96db0f4fe8a7",
+              "parentUUID": "b35a56dd-0bd6-4451-b56c-f648d197adbf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f206af78-5b21-4719-b6d4-1df33d3d1749"
+            "54d0272a-687a-4898-ad6f-aed81693a7c0",
+            "82f80547-e15d-449c-84bf-96db0f4fe8a7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11121,
+          "duration": 20173,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +95,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "6d48f587-ffbe-44dc-a13c-50821b3951fc",
+      "uuid": "131af87a-d53b-4ecd-a403-dc690694c3a7",
       "title": "",
       "fullFile": "cypress/integration/my-own-tests/01-verifyingSignIn.spec.js",
       "file": "cypress/integration/my-own-tests/01-verifyingSignIn.spec.js",
@@ -143,7 +104,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d2f11c1e-8471-496c-9359-7782e21de70a",
+          "uuid": "bd012aaa-7e96-4dba-9386-c6038b820160",
           "title": "Basic Test",
           "fullFile": "",
           "file": "",
@@ -154,7 +115,7 @@
               "title": "Correct Title",
               "fullTitle": "Basic Test Correct Title",
               "timedOut": null,
-              "duration": 1878,
+              "duration": 1780,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -163,8 +124,8 @@
               "context": null,
               "code": "cy.title().should('eq', 'Conduit');",
               "err": {},
-              "uuid": "1974c33e-a8b9-46fc-b5b0-c91db160701c",
-              "parentUUID": "d2f11c1e-8471-496c-9359-7782e21de70a",
+              "uuid": "a9de1790-4aa8-4754-ad08-9f78904a79a3",
+              "parentUUID": "bd012aaa-7e96-4dba-9386-c6038b820160",
               "isHook": false,
               "skipped": false
             },
@@ -172,7 +133,7 @@
               "title": "Verify Sign In functionality",
               "fullTitle": "Basic Test Verify Sign In functionality",
               "timedOut": null,
-              "duration": 3555,
+              "duration": 3608,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -181,21 +142,21 @@
               "context": null,
               "code": "cy.signinToApplication();\ncy.get('a[routerlink=\"/editor\"]').should('exist');",
               "err": {},
-              "uuid": "941795f3-253f-4563-af2e-14126f315849",
-              "parentUUID": "d2f11c1e-8471-496c-9359-7782e21de70a",
+              "uuid": "463e06e4-7ba9-499e-b2e0-3aab7f9b7675",
+              "parentUUID": "bd012aaa-7e96-4dba-9386-c6038b820160",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1974c33e-a8b9-46fc-b5b0-c91db160701c",
-            "941795f3-253f-4563-af2e-14126f315849"
+            "a9de1790-4aa8-4754-ad08-9f78904a79a3",
+            "463e06e4-7ba9-499e-b2e0-3aab7f9b7675"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5433,
+          "duration": 5388,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

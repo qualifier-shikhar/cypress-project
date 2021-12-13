@@ -1,4 +1,5 @@
 {
+    "projectId": "6tyane",
     "baseUrl": "http://localhost:4200",
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
