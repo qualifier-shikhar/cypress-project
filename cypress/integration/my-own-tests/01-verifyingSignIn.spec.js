@@ -11,6 +11,7 @@ describe("Basic Test", ()=> {
 
     it('Verify Sign In functionality', ()=> {
         cy.signinToApplication()
+        cy.get(':nth-child(4) > .nav-link').should('have.text', ' srj123 ');
         cy.get('a[routerlink="/editor"]').should('exist')
     })
 })

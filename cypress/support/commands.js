@@ -32,5 +32,19 @@ Cypress.Commands.add('signinToApplication', ()=> {
 
 Cypress.Commands.add('logoutToApplication', ()=> {
     cy.visit('/settings')
-    cy.contains('Or click here to logout').click()
-  })
+    cy.contains('Or click here to Sign Out').click()
+})
+
+Cypress.Commands.add('signUpToApplication', () => {
+    cy.visit('/')
+    cy.get('.container > .nav > :nth-child(3) > .nav-link').click();
+    cy.get(':nth-child(1) > .form-control').clear();
+    cy.get(':nth-child(1) > .form-control').type('srj123');
+    cy.get(':nth-child(2) > .form-control').clear();
+    cy.get(':nth-child(2) > .form-control').type('srj123@gmail.com');
+    cy.get(':nth-child(3) > .form-control').clear();
+    cy.get(':nth-child(3) > .form-control').type('srj123');
+    cy.get('.btn').click();
+    cy.get(':nth-child(4) > .nav-link').should('have.text', ' srj123 ');
+    cy.get('.container > .nav > :nth-child(2) > .nav-link').should('have.attr', 'routerlink', '/editor');
+})

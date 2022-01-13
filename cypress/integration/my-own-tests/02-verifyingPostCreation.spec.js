@@ -1,6 +1,9 @@
 /// <reference types="cypress" />
 
-describe("Post Creation", ()=> {
+describe.skip("Post Creation & Deletion", ()=> {
+    beforeEach(() => {
+        cy.fixture('global_feed').as('articles')
+    })
     it('verify creation of post', ()=> {
         cy.signinToApplication()
         cy.contains('New Article').click()
@@ -17,5 +20,14 @@ describe("Post Creation", ()=> {
         cy.contains('Publish Article').click()
 
         cy.get('button[class="btn btn-sm btn-outline-danger"]').should('exist')
+    })
+
+    it('verify deletion of post', ()=> {
+        cy.signinToApplication()
+        cy.contains('Global Feed').click()
+        cy.contains('Jenkins Integration').click()
+        cy.get('button[class="btn btn-sm btn-outline-danger"]').first().click()
+        cy.contains('Your Feed').should('exist')
+        cy.logoutToApplication()
     })
 })

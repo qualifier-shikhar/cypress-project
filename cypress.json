@@ -5,7 +5,8 @@
         "configFile": "reporter-config.json"
     },
     "env": {
-        "username": "artem.bondar16@gmail.com",
-        "password": "CypressTest1"
-    }
+        "username": "srj123@gmail.com",
+        "password": "srj123"
+    },
+    "experimentalStudio": true
 }
