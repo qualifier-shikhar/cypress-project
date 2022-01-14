@@ -1,0 +1,106 @@
+{
+  "articles":[
+     {
+        "slug":"Jenk-11783",
+        "title":"Jenk",
+        "description":"Description to Jenkins",
+        "body":"This is just a title to Jnenkins",
+        "createdAt":"2022-01-14T05:33:06.909Z",
+        "updatedAt":"2022-01-14T05:33:06.909Z",
+        "tagList":[
+           "ci/cd",
+           "pipelines",
+           "jenkins"
+        ],
+        "author":{
+           "username":"srj123",
+           "bio":null,
+           "image":"https://api.realworld.io/images/smiley-cyrus.jpeg",
+           "following":false
+        },
+        "favoritesCount":1,
+        "favorited":false
+     },
+     {
+        "slug":"Jenkins-11783",
+        "title":"Jenkins",
+        "description":"Description to Jenkins",
+        "body":"This is just a title to Jnenkins",
+        "createdAt":"2022-01-14T04:59:49.243Z",
+        "updatedAt":"2022-01-14T04:59:49.243Z",
+        "tagList":[
+           "ci/cd",
+           "pipelines",
+           "jenkins"
+        ],
+        "author":{
+           "username":"srj123",
+           "bio":null,
+           "image":"https://api.realworld.io/images/smiley-cyrus.jpeg",
+           "following":false
+        },
+        "favoritesCount":5,
+        "favorited":false
+     },
+     {
+        "slug":"Create-a-new-implementation-1",
+        "title":"Create a new implementation",
+        "description":"join the community by creating a new implementation",
+        "body":"Share your knowledge and enpower the community by creating a new implementation",
+        "createdAt":"2021-11-24T12:11:08.212Z",
+        "updatedAt":"2021-11-24T12:11:08.212Z",
+        "tagList":[
+           "implementations"
+        ],
+        "author":{
+           "username":"Gerome",
+           "bio":null,
+           "image":"https://api.realworld.io/images/demo-avatar.png",
+           "following":false
+        },
+        "favoritesCount":770,
+        "favorited":true
+     },
+     {
+        "slug":"Explore-implementations-1",
+        "title":"Explore implementations",
+        "description":"discover the implementations created by the RealWorld community",
+        "body":"Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.",
+        "createdAt":"2021-11-24T12:11:07.952Z",
+        "updatedAt":"2021-11-24T12:11:07.952Z",
+        "tagList":[
+           "codebaseShow",
+           "implementations"
+        ],
+        "author":{
+           "username":"Gerome",
+           "bio":null,
+           "image":"https://api.realworld.io/images/demo-avatar.png",
+           "following":false
+        },
+        "favoritesCount":490,
+        "favorited":false
+     },
+     {
+        "slug":"Welcome-to-RealWorld-project-1",
+        "title":"Welcome to RealWorld project",
+        "description":"Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more",
+        "body":"See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec",
+        "createdAt":"2021-11-24T12:11:07.557Z",
+        "updatedAt":"2021-11-24T12:11:07.557Z",
+        "tagList":[
+           "welcome",
+           "introduction"
+        ],
+        "author":{
+           "username":"Gerome",
+           "bio":null,
+           "image":"https://api.realworld.io/images/demo-avatar.png",
+           "following":false
+        },
+        "favoritesCount":313,
+        "favorited":false
+     }
+  ],
+  "articlesCount":5
+}
