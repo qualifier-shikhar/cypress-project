@@ -23,11 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('signinToApplication', ()=> {
-    cy.visit('/login')
-    cy.get('[placeholder="Email"]').type(Cypress.env('username'))
-    cy.get('[placeholder="Password"]').type(Cypress.env('password'))
-    cy.get('button[class="btn btn-lg btn-primary pull-xs-right"]').click()
+Cypress.Commands.add('signinToApplication', (userName, password)=> {    
+    cy.session([userName, password], () => {
+        cy.visit('/login')
+        cy.get('[placeholder="Email"]').type(userName)
+        cy.get('[placeholder="Password"]').type(password)
+        cy.get('button[class="btn btn-lg btn-primary pull-xs-right"]').click()
+        cy.get('a[routerlink="/editor"]').should('exist')
+    })
 })
 
 Cypress.Commands.add('logoutToApplication', ()=> {

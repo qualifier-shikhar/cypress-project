@@ -9,5 +9,6 @@
         "username": "srj123@gmail.com",
         "password": "srj123"
     },
-    "experimentalStudio": true
+    "experimentalStudio": true,
+    "experimentalSessionSupport": true
 }

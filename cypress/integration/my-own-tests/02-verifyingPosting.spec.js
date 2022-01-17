@@ -1,11 +1,15 @@
 /// <reference types="cypress" />
 
-describe.skip("Post Creation & Deletion", ()=> {
+describe("Post Creation & Deletion", ()=> {
     beforeEach(() => {
-        cy.fixture('global_feed').as('articles')
+        const userName = Cypress.env('username')
+        const password = Cypress.env('password')
+        cy.signinToApplication(userName, password)
+        
     })
     it('verify creation of post', ()=> {
-        cy.signinToApplication()
+        cy.visit('/')
+        cy.wait(5000)
         cy.contains('New Article').click()
         cy.get('[ng-reflect-name="title"]').type('Jenkins Integration')
 
@@ -16,14 +20,15 @@ describe.skip("Post Creation & Deletion", ()=> {
         cy.get('input[type="text"][placeholder="Enter tags"]').type('jenkins{enter}')
         cy.get('input[type="text"][placeholder="Enter tags"]').type('ci/cd{enter}')
         cy.get('input[type="text"][placeholder="Enter tags"]').type('pipelines{enter}')
-
-        cy.contains('Publish Article').click()
+        
+        cy.contains('Publish Article').click().wait(5000)
 
         cy.get('button[class="btn btn-sm btn-outline-danger"]').should('exist')
     })
 
     it('verify deletion of post', ()=> {
-        cy.signinToApplication()
+        cy.visit('/')
+        cy.wait(5000)
         cy.contains('Global Feed').click()
         cy.contains('Jenkins Integration').click()
         cy.get('button[class="btn btn-sm btn-outline-danger"]').first().click()
